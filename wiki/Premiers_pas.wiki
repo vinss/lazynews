@@ -1,8 +1,6 @@
 _Tout ce qu'il faut savoir pour bien débuter avec LazyNews._
 -----------------------------------------------------------
 
-[Premiers_pas] :
-
 *Pour accéder à la gestion des annonces* :
 Sur la page "index.php" cliquez sur "Zone réservée", entrez votre mot de passe (admin par défaut lors d'une nouvelle installation) et validez.
 
