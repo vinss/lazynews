@@ -1,0 +1,18 @@
+_Tout ce qu'il faut savoir pour bien débuter avec LazyNews._
+
+---
+
+
+**Pour accéder à la gestion des annonces** :
+Sur la page "index.php" cliquez sur "Zone réservée", entrez votre mot de passe (admin par défaut lors d'une nouvelle installation) et validez.
+
+
+**Pour changer votre mot de passe** :
+Ouvrez le fichier "pass\_md5.php" avec un éditeur de texte, remplacez "admin" (à la ligne 7) par votre nouveau mot de passe, lancez le fichier "pass-md5.php" dans votre navigateur (http://127.0.0.1/lazynews_0.9/pass-md5.php), copiez la chaîne de caractères affichée, accédez à votre base de données via phpMyadmin (par exemple), dans la table "video\_users" modifiez le contenu du champ "mdp" correspondant au nom "admin" en collant la chaîne de caractètres précédement copiée.
+
+
+**Pour ajouter un nouveau site** :
+Accédez à votre base de données via phpMyadmin (par exemple), dans la table "video\_sites" insérez une nouvelle entrée en remplissant uniquement le champ "nom", notez l'id de ce nouveau site, dans la table "video\_users" insérez une nouvelle entrée en remplissant le champ "nom" par le nom que vous voulez attribuer à cet utilisateur, le champ level par "2" et le champ "site" par le numéro d'id correspondant au site que cet utilisateur pourra gérer. Le champ "mdp" contient le mot de passe encrypté en md5, référez-vous à la procédure de changement de mot de passe pour en ajouter un.
+
+
+_Une interface d'administration des sites et utilisateurs est en cours de développement et sera incluse prochainement._
